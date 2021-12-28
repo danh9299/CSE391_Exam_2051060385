@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Câu 3</title>
+    <!--Bootstrap-->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3"
+      crossorigin="anonymous"
+    />
+    <!--Link style.css-->
+    <link rel="stylesheet" href="css/style.css" />
+    <!--Google font-->
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/icon?family=Material+Icons"
+    />
+  </head>
+  <body>
+    <!--Câu 3-->
+    <div class="container">
+      <h1 class="text-center" style="color: rgb(41, 41, 124)">
+        Đăng ký du lịch
+      </h1>
+      <table class="table table-bordered border-primary">
+        <tbody>
+          <!--Họ và tên-->
+          <tr>
+            <th scope="row">Họ và tên</th>
+            <td><input id="nameInput" placeholder="Nhập họ và tên" /><p id="nameHelp"></p></td>
+            
+          </tr>
+          <!--Địa chỉ-->
+          <tr>
+            <th scope="row">Địa chỉ</th>
+            <td><input id="addrInput" placeholder="Nhập địa chỉ" /> <p id="addrHelp"></p></td>
+          </tr>
+          <!--Số điện thoại-->
+          <tr>
+            <th scope="row">Điện thoại</th>
+            <td><input id="phoneInput" placeholder="Nhập số điện thoại" /><p id="phoneHelp"></p></td>
+          </tr>
+          <!--Khách Việt Nam-->
+          <tr>
+            <th scope="row">Khách Việt Nam</th>
+            <td>
+              <div class="form-check">
+                <input
+                  class="form-check-input"
+                  type="checkbox"
+                  value=""
+                  id="invalidCheck2"
+                  required
+                />
+              </div>
+            </td>
+          </tr>
+          <!--Chọn Tour-->
+          <tr>
+            <th scope="row">Chọn tour</th>
+            <td>
+              <select
+                class="form-select form-select-sm"
+                size="1"
+                id="choiceInput"
+                aria-label=".form-select-sm example"
+              >
+                <option value="0" selected>Xin mời chọn tour</option>
+                <option value="1">Hà Nội - Hồ Chí Minh</option>
+                <option value="2">Buôn Mê Thuột - Gia Lai - Kontum</option>
+                <option value="3">Hải Phòng - Cần Thơ</option>
+              </select>
+              <p id="choiceHelp"></p>
+            </td>
+          </tr>
+          <!--Phương tiện-->
+          <tr>
+            <th scope="row">Phương tiện</th>
+            <td>
+              <div class="col-md form-check">
+                <input
+                  type="radio"
+                  class="form-check-input"
+                  id="validationFormCheck2"
+                  name="radio-stacked"
+                  required
+                />
+                <label class="form-check-label" for="validationFormCheck2"
+                  >Máy bay</label
+                >
+              </div>
+              <div class="col-md form-check">
+                <input
+                  type="radio"
+                  class="form-check-input"
+                  id="validationFormCheck3"
+                  name="radio-stacked"
+                  required
+                />
+                <label class="form-check-label" for="validationFormCheck3"
+                  >Xe ô tô</label
+                >
+              </div>
+              <p id="vehicleHelp"></p>
+            </td>
+          </tr>
+          <!--Số lượng đoàn khách-->
+          <tr>
+            <th>Số lượng đoàn khách</th>
+            <td>
+              <div class="row">
+                <div class="col">
+                  <label>Người lớn</label>
+                  <input id="adultInput" type="number" placeholder="Số người lớn" />
+                </div>
+                <div class="col">
+                  <label>Trẻ em</label>
+                  <input id="childInput" type="number" placeholder="Số trẻ em" />
+                </div>
+              </div>
+              <p id="guestHelp"></p>
+            </td>
+          </tr>
+          <!--Ghi chú thêm-->
+          <tr>
+            <th>Ghi chú thêm</th>
+            <td>
+              <input placeholder="Nhập ghi chú" />
+            </td>
+          </tr>
+          <!--Đồng ý - reset-->
+          <tr class="tr-borderless">
+            <td colspan="2" class="text-center">
+              <button id="yes">Đồng ý</button>
+              <button id="no">Reset</button>
+            </td>
+          </tr>
+          <!--Thông báo thành công-->
+          <tr class="tr-borderless">
+            <td colspan="2" class="text-center">
+              <p id="status">Trạng thái đăng ký</p>
+            </td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+    <!--script.js-->
+    <script src="js/script.js"></script>
+    <!--Bundle-->
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
+      crossorigin="anonymous"
+    ></script>
+  </body>
+</html>

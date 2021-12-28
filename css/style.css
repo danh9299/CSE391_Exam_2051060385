@@ -1,0 +1,57 @@
+/*css for body*/
+body {
+  width: 100%;
+  padding: 0% 0%;
+}
+/*css for top-menu*/
+.top-menu {
+  background-color: #dc1588;
+  padding: 5px 0px;
+}
+
+.hotline {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  column-gap: 10px 0px;
+}
+
+.nav-option button {
+  border: none;
+  background-color: #dc1588;
+  color: white;
+  font-size: 17px;
+  align-items: center;
+}
+
+.nav-option span {
+  font-size: 17px;
+}
+
+/*css for main-menu*/
+.main-menu {
+  background-color: #fff;
+  padding: 10px;
+}
+.select-buttons {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+.select-buttons button {
+  border: none;
+  background-color: #fff;
+  font-weight: 500;
+}
+
+#txt-button {
+  color: #879aac;
+}
+
+/*css for banner*/
+.banner {
+  padding: 0px 0px;
+}
+.banner img {
+  width: 100%;
+}
